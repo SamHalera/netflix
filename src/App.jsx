@@ -1,4 +1,5 @@
 import "./App.css";
+import Header from "./components/Header";
 import Category from "./components/Category";
 import logo from "./images/netflix.png";
 import moviesData from "./assets/movies";
@@ -6,9 +7,7 @@ import moviesData from "./assets/movies";
 function App() {
   return (
     <div className="container">
-      <header>
-        <img className="logo" src={logo} alt="" />
-      </header>
+      <Header logo={logo} />
       <div className="movies-container">
         {moviesData.map((movie, index) => {
           return (
